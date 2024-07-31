@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de atribuição</title>
+</head>
+<body>
+    <h1>Exercício 4 - Treino de Operadores de Atribuição</h1>
+    <button onclick="resultadoUm()">Exercício 1</button>
+    <button onclick="resultadoDois()">Exercício 2</button>
+    <button onclick="resultadoTrês()">Exercício 3</button>
+
+    <script>
+        function resultadoUm(){
+            let a = 12
+            let b = 8
+            let c = 15
+            let d = 3
+
+            let resultado_a = (a-2)*5
+            let resultado_b = (b+6)/2
+            let resultado_c = (c*3)/5
+            let resultado_d = (d%2)+1
+
+    window.alert(`
+
+            a = 12
+            b = 8
+            c = 15
+            d = 3
+
+Objetivo:    
+    Subtraia 2 do valor de a e multiplique o resultado por 5.
+    Adicione 6 ao valor de b e divida o resultado por 2.
+    Multiplique o valor de c por 3 e depois divida o resultado por 5.
+    Atribua o resto da divisão de d por 2 a d e depois adicione 1.
+        
+        a = ${resultado_a}
+        b = ${resultado_b}
+        c = ${resultado_c}
+        d = ${resultado_d}    
+        `) 
+        }
+        
+        function resultadoDois(){
+            let x = 10 
+            let y = 25
+            let z = 18
+            let w = 7
+            let v = 6
+
+            let resultadox = 2*(x-4)+8
+            let resultadoy = (y/5)*3
+            let resultadoz = (z+12)/6
+            let resultadow = (w*4)-5
+            let resultadov = (v%4)+2
+
+            window.alert(`
+            x = 10 
+            y = 25
+            z = 18
+            w = 7
+            v = 6
+
+    Objetivo:
+        Subtraia 4 de x, multiplique o resultado por 2 e depois adicione 8.
+        Divida o valor de y por 5 e depois multiplique o resultado por 3.
+        Adicione 12 ao valor de z e depois divida o resultado por 6.
+        Multiplique o valor de w por 4 e depois subtraia 5.
+        Atribua o resto da divisão de v por 4 a v e depois adicione 2.
+
+        x = ${resultadox} 
+        y = ${resultadoy}
+        z = ${resultadoz}
+        w = ${resultadow}
+        v = ${resultadov}
+            `)
+
+
+        }
+        function resultadoTrês(){
+            let p = 20
+            let q = 9
+            let r= 14
+
+            let resultadop = (p/4)+5
+            let resultadoq = (q*3)-7
+            let resultador = (r+10)/2-1
+           
+            window.alert(`
+
+            p = 20
+            q = 9
+            r= 14
+
+    Objetivo:    
+        Divida o valor de p por 4 e depois adicione 5.
+        Multiplique o valor de q por 3 e depois subtraia 7.
+        Adicione 10 ao valor de r, depois divida o resultado por 2 e finalmente subtraia 1. 
+            
+        p = ${resultadop}
+        q = ${resultadoq}
+        r = ${resultador}
+
+        `)
+        }
+
+    </script>
+</body>
+</html>

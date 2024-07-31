@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <h1>Treino de Operadores de atribuição</h1>
+    <button onclick="resultadoEx01()">Exercício 1</button>
+    <button onclick="resultadoEx02()">Exercício 2</button>
+    <button onclick="resultadoEx03()">Exercício 3</button>
+    <script>
+        function resultadoEx01(){
+            let a = 20
+            let b = 10
+            let c = 5
+
+            a/=4
+            b*=3
+            c-=1
+
+            window.alert(`
+        a = 20
+        b = 10
+        c = 5
+
+        // Objetivo:
+        // Divida o valor de a por 4.
+        // Multiplique o valor de b por 3.
+        // Subtraia 1 do valor de c.
+
+    Resposta:    
+        a = ${a}
+        b = ${b}
+        c = ${c}
+`)
+}
+        function resultadoEx02(){
+            let m = 25
+            let n = 8
+            let p = 18
+
+            m-=10
+            n/=4
+            p+=7
+
+            window.alert(`
+            m = 25
+            n = 8
+            p = 18
+
+        // Objetivo:
+            // Subtraia 10 do valor de m.
+            // Divida o valor de n por 4.
+            // Adicione 7 ao valor de p.
+           
+        Resultado:
+            m = ${m}
+            n = ${n}
+            p = ${p}
+            `)
+        }
+        function resultadoEx03(){
+            let x = 15
+            let y = 7
+            let z = 22
+
+            x*=2
+            y+=3
+            z/=11
+
+            window.alert(`
+            x = 15
+            y = 7
+            z = 22
+
+        // Objetivo:
+            // Multiplique o valor de x por 2.
+            // Adicione 3 ao valor de y.
+            // Divida o valor de z por 11.
+           
+        Resultado:
+            x = ${x}
+            y = ${y}
+            z = ${z}
+            `)
+        }
+    </script>
+</body>
+</html>

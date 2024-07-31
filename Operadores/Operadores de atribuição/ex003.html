@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <h1>Exercício 3 - Treino de operadores de atribuição</h1>
+    <button onclick="resultadoExercício_a()">Exercício a</button>
+    <button onclick="resultadoExercício_b()">Exercício b</button>
+    <button onclick="resultadoExercício_c()">Exercício c</button>
+
+    <script>
+        function resultadoExercício_a(){
+            let a = 15
+            let b = 6
+            let c = 4
+
+            a-=3
+            b+=7
+            c/=2
+
+            window.alert(`
+
+            a = 15
+            b = 6
+            c = 4
+
+    Objetivo:    
+        Subtraia 3 do valor de a.
+        Adicione 7 ao valor de b.
+        Divida o valor de c por 2 e armazene o resultado em c.
+        
+        a = ${a}
+        b = ${b}
+        c = ${c}
+
+        `)
+        }
+
+        function resultadoExercício_b(){
+            let x = 50
+            let y = 20
+            let z = 30
+
+            x/=5  
+            y*=4
+            z-=10
+
+            window.alert(`
+
+            x = 50
+            y = 20
+            z = 30
+
+    Objetivo:    
+        Divida o valor de x por 5 e armazene o resultado em x.
+        Multiplique o valor de y por 4.
+        Subtraia 10 do valor de z.
+        
+        x = ${x}
+        y = ${y}
+        z = ${z}
+
+        `)
+        }
+        function resultadoExercício_c(){
+            let p = 12
+            let q = 25
+            let r = 40
+
+            p+=15
+            q/=5
+            r%=6
+
+            window.alert(`
+
+            p = 12
+            q = 25
+            r = 40
+
+    Objetivo:    
+        Adicione 15 ao valor de p.
+        Divida o valor de q por 5.
+        Atribua o resto da divisão de r por 6 a r.
+        
+        p = ${p}
+        q = ${q}
+        r = ${r}
+
+        `) 
+        }
+    </script>
+</body>
+</html>
