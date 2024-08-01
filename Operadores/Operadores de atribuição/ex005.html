@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de atribuição</title>
+</head>
+<body>
+    <h1>Exercício 5 - Operadores de Atribuição</h1>
+    <h2>Abrir no Console!</h2>
+    <button onclick="resultadoDoEx01()">Exercício 1</button>
+    <button onclick="resultadoDoEx02()">Exercício 2</button>
+    <button onclick="resultadoDoEx03()">Exercício 3</button>
+
+    <script>
+        function resultadoDoEx01(){
+            let idade = 32;
+            let anoAtual = new Date().getFullYear();
+            let anoNascimento = anoAtual-32;
+        
+            console.log(`
+Atribuição simples
+
+Crie uma variável chamada idade e atribua a ela um valor numérico que represente sua idade. Em seguida, crie outra variável chamada anoNascimento e atribua a ela o valor do ano atual subtraindo sua idade. Imprima ambos os valores no console.
+            
+Minha idade é ${idade} e meu ano de nascimento é ${anoNascimento}`)
+        }
+        function resultadoDoEx02(){
+            let contador = 0;
+            contador += 5;
+            
+            console.log(`
+Atribuição com Operador de Adição
+
+Crie uma variável chamada contador e inicie com o valor 0. Usando o operador de atribuição de adição (+=), incremente o contador em 5. Em seguida, exiba o valor atualizado do contador no console.
+
+Contador é ${contador}
+`)
+        }
+        function resultadoDoEx03(){
+            let precoProduto = 50;
+            let quantidade = 3;
+            let total = precoProduto*=quantidade;
+            
+            console.log(`
+Atribuição com Operador de Multiplicação
+
+Crie uma variável chamada precoProduto e atribua a ela um valor numérico (por exemplo, 50). Depois, crie outra variável chamada quantidade e atribua 3. Use o operador de atribuição de multiplicação (*=) para calcular o total (total) como o preço do produto multiplicado pela quantidade. Exiba o total no console.            
+            
+O total ficou em ${total}
+`)
+        }
+    </script>
+
+</body>
+</html>

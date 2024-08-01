@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de atribuição</title>
+</head>
+<body>
+    <h1>Operadores de atribuição</h1>
+    <h2>Operadores de Subtração e Atribuição</h2>
+    </p>Crie uma calculadora simples que subtraia um valor fixo de um número definido pelo usuário. O número fixo será 10. Exiba o resultado no console.</p>
+    <button onclick="resultadoUm()">Resultado</button>
+
+    <h2>Manipulação de Strings</h2>
+    </p>Crie uma função que receba uma string do usuário e exiba no console a mesma string, mas em letras maiúsculas e com o tamanho total da string.</p>
+
+    <button onclick="resultadoDois()">Resultado</button>
+
+    <h2>Verificação de Par ou Ímpar</h2>
+    </p>Crie uma função que peça um número ao usuário e verifique se ele é par ou ímpar. Exiba a mensagem correspondente no console.</p>
+
+    <button onclick="resultadoTrês()">Resultado</button>
+
+    <script>
+        function resultadoUm(){
+    let numero = prompt("Digite um número: ");
+    let resultado = numero-10;
+
+window.alert(`
+Você digitou ${numero}! 
+Após subitrair 10, o resultado é ${resultado}.
+`)
+}
+    function resultadoDois(){
+            let nome = prompt("Digite seu nome completo em letras minúsculas.")
+            let nomeMaiusculo = nome.toUpperCase();
+            let letras = nome.length;
+
+            console.log(`
+Manipulação de Strings
+
+Você digitou: "${nome}" 
+Em maiúsculas: "${nomeMaiusculo}" 
+O tamanho do seu nome é: ${letras} caracteres contanto com os espaços.` )
+        }
+
+    function resultadoTrês(){
+        let numero = prompt("Digite um número:")
+        let resultado = numero % 2 === 0 ? `Par` : `Ímpar`;
+        
+        console.log(`
+Esse número ${numero} que você digitou é ${resultado}        
+        `)
+    }        
+</script>
+</body>
+</html>
